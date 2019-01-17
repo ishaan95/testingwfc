@@ -5,6 +5,7 @@
 #include <limits>
 #include <random>
 #include <unordered_map>
+#include <optional>
 
 #include "utils/array2D.hpp"
 #include "utils/utils.hpp"

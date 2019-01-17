@@ -1,0 +1,8 @@
+<set size="2">
+	<tiles>
+		<tile name="grass" symmetry="X"/>
+	</tiles>
+	<neighbors>
+        <neighbor left="grass 0" right="grass 0"/>
+	</neighbors>
+</set>

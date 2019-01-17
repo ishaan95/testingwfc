@@ -46,12 +46,12 @@ void read_overlapping_instance(xml_node<> *node) {
   unsigned symmetry = stoi(rapidxml::get_attribute(node, "symmetry", "8"));
   unsigned screenshots =
       stoi(rapidxml::get_attribute(node, "screenshots", "2"));
-  unsigned width = stoi(rapidxml::get_attribute(node, "width", "48"));
-  unsigned height = stoi(rapidxml::get_attribute(node, "height", "48"));
+  unsigned width = stoi(rapidxml::get_attribute(node, "width", "96"));
+  unsigned height = stoi(rapidxml::get_attribute(node, "height", "96"));
 
   cout << name << " started!" << endl;
   // Stop hardcoding samples
-  const std::string image_path = "samples/" + name + ".png";
+  const std::string image_path = "testfolder/" + name + ".png";
   std::optional<Array2D<Color>> m = read_image(image_path);
   if (!m.has_value()) {
     throw "Error while loading " + image_path;
@@ -64,7 +64,7 @@ void read_overlapping_instance(xml_node<> *node) {
       OverlappingWFC<Color> wfc(*m, options, seed);
       std::optional<Array2D<Color>> success = wfc.run();
       if (success.has_value()) {
-        write_image_png("results/" + name + to_string(i) + ".png", *success);
+        write_image_png("testresults/" + name + to_string(i) + ".png", *success);
         cout << name << " finished!" << endl;
         break;
       } else {
@@ -220,12 +220,14 @@ void read_simpletiled_instance(xml_node<> *node,
       (rapidxml::get_attribute(node, "periodic", "False") == "True");
   unsigned width = stoi(rapidxml::get_attribute(node, "width", "48"));
   unsigned height = stoi(rapidxml::get_attribute(node, "height", "48"));
-
+    
   cout << name << " " << subset << " started!" << endl;
-
+  
   ifstream config_file("samples/" + name + "/data.xml");
+  
   vector<char> buffer((istreambuf_iterator<char>(config_file)),
                       istreambuf_iterator<char>());
+ 
   buffer.push_back('\0');
   xml_document<> data_document;
   data_document.parse<0>(&buffer[0]);
@@ -287,8 +289,8 @@ void read_config_file(const string &config_path) noexcept {
   xml_document<> document;
   document.parse<0>(&buffer[0]);
 
-  xml_node<> *root_node = document.first_node("samples");
-  string dir_path = get_dir(config_path) + "/" + "samples";
+  xml_node<> *root_node = document.first_node("samples01");
+  string dir_path = get_dir(config_path) + "/" + "testfolder";
   for (xml_node<> *node = root_node->first_node("overlapping"); node;
        node = node->next_sibling("overlapping")) {
     read_overlapping_instance(node);
@@ -309,7 +311,7 @@ int main() {
   std::chrono::time_point<std::chrono::system_clock> start, end;
   start = std::chrono::system_clock::now();
 
-  read_config_file("samples.xml");
+  read_config_file("samples01.xml");
 
   end = std::chrono::system_clock::now();
   int elapsed_s =

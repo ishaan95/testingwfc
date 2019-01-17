@@ -1,0 +1,7 @@
+<samples01>
+   <overlapping name="map02_04" N="3" />
+   <overlapping name="Lake" N="3" />
+   <overlapping name="Magic Office" N="3" />
+   <overlapping name="zelda" N="3" />
+   <simpletiled name="Rooms_1" width="15" height="15" />
+</samples01>

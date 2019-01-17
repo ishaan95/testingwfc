@@ -17,7 +17,7 @@
 		<neighbor left="corner" right="side 2"/>
 		<neighbor left="corner 1" right="side 1"/>
 		<neighbor left="corner 1" right="t 1"/>
-		<neighbor left="corner 1" right="turn"/>
+		<neighbor left="corner 1" right="turn"/>/Users/ishaanparanjape/Downloads/UCSC_Documents/Q5/cm202/project_main/fast-wfc/testfolder/Rooms_1/bend.png
 		<neighbor left="corner 2" right="turn"/>
 		<neighbor left="wall" right="corner"/>
 		<neighbor left="corridor 1" right="corridor 1"/>
