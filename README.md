@@ -4,9 +4,9 @@ In this implementation we use the overlapping model.
 
 Screenshots - 
 
-1)     Tile - Lake - ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testfolder/Lake.png) 
-       Output - Lake - ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testresults/Lake0.png)
-       Output - Lake - ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testresults/Lake1.png) 
+1)     ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testfolder/Lake.png) 
+       ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testresults/Lake0.png)
+       ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testresults/Lake1.png) 
 2)     Tile - Magic Office - ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testfolder/Magic%20Office.png) . 
        ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testresults/Magic%20Office0.png) . 
        ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testresults/Magic%20Office1.png) . 
