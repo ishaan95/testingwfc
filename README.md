@@ -1,44 +1,50 @@
-# fast-wfc
+## Testing the wfc c++ port by Mathieu Fehr and Nathanaël Courant
+
+In this implementation we use the overlapping model.
+
+Screenshots - 
+
+1) (a) Tile - Lake - ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testfolder/Lake.png)
+   (b) Output image 1 - Lake ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testresults/Lake0.png)
+       Output Image 2 - Lake ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testresults/Lake1.png)
+2) (a) Tile - Magic Office - ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testfolder/Magic%20Office.png)
+   (b) Output Image 1 - Magic Office ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testresults/Magic%20Office0.png)
+       Output Image 2 - Magic Office ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testresults/Magic%20Office1.png)
+3) (a) Tile - Map - ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testfolder/map02_04.png)
+   (b) Output Image 1 - Map - ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testresults/map02_040.png)
+       Output Image 2 - Map - ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testresults/map02_041.png)
+4) (a) Tile - Zelda - ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testfolder/zelda.png)
+   (b) Output - Zelda - ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testresults/zelda0.png) 
+       Output - Zelda - ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testresults/zelda1.png) 
+
+
+## fast-wfc
 
 An implementation of [Wave Function Collapse](https://github.com/mxgmn/WaveFunctionCollapse) with a focus on performance.
 At the time of writing, only the overlapping method has been implemented.
 
-# Requirements
+## Requirements
 
 You need a C++-17 compatible compiler.
 
-# Getting started
+## Getting started
 
 ```
-git clone https://github.com/math-fehr/fast-wfc && cd fast-wfc/
+git clone https://github.com/ishaan95/testingwfc && cd testingwfc/
 make all
 ./wfc
 ```
 
-# Performance
+## Performance
 
-If fast-wfc is an order of magnitude faster than the original WFC algorithm, it is thanks to three main optimizations that have been made to the original algorithm, described below.
+If fast-wfc is an order of magnitude faster than the original WFC algorithm, it is thanks to three main optimizations that have been made to the original algorithm, described below. 
 
-The first one of these changes the algorithm to propagate information. Instead of storing for each position which patterns are allowed, it stores for each position and each possible direction the number of compatible patterns allowed in the corresponding neighbor. If that number reaches zero for any neighbor, that pattern is no longer allowed in that position and this information must be propagated. Thus, the propagation no longer recurses on the position only, but instead on a pair consisting in a position and a pattern that is no longer allowed in that position. Thanks to this, propagation is only done when necessary.
-
-The second change is related to the entropy: instead of being recomputed each time we need to find the position with the lowest entropy, it is only recomputed when a pattern is removed in a location, in O(1) time thanks to memoization of intermediate results.
-
-The third and last major change is specific to the overlapping model: when information is propagated, it is only propagated to the four neighbours (when in 2D) instead of all other positions that share part of a tile. Indeed, the information will be propagated to these other locations by the recursive propagation algorithm with the immediate neighbors being intermediate steps. This has two important consequences: first and foremost, the overlapping model can now be seen as an instance of the tiling model, with tiles being the subregions of the original image. Second, it greatly reduces the memory footprint of the first optimization, which would otherwise probably actually slow the code instead.
-
-Besides, care has been taken for the code to be cache-friendly and to leave enough room to the compiler to optimize the code as it sees fit. 
-
-# Third-parties library
+## Third-parties library
 
 The files in `src/lib/` come from:
 * RapidXML [https://github.com/dwd/rapidxml](https://github.com/dwd/rapidxml)
 * stb Library [https://github.com/nothings/stb](https://github.com/nothings/stb)
 
-# Image samples
+## Image samples
 
 The image samples come from [https://github.com/mxgmn/WaveFunctionCollapse](https://github.com/mxgmn/WaveFunctionCollapse)
-
-# Licence 
-
-Copyright (c) 2018 Mathieu Fehr and Nathanaël Courant.
-
-MIT License, see `LICENSE` for further details.
