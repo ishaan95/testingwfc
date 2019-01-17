@@ -1,21 +1,21 @@
-## Testing the wfc c++ port by Mathieu Fehr and Nathanaël Courant
+## Testing the wfc c++ port - originally by Mathieu Fehr and Nathanaël Courant
 
 In this implementation we use the overlapping model.
 
 Screenshots - 
 
-1) (a) Tile - Lake - ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testfolder/Lake.png)
-   (b) Output image 1 - Lake ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testresults/Lake0.png)
-       Output Image 2 - Lake ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testresults/Lake1.png)
-2) (a) Tile - Magic Office - ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testfolder/Magic%20Office.png)
-   (b) Output Image 1 - Magic Office ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testresults/Magic%20Office0.png)
-       Output Image 2 - Magic Office ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testresults/Magic%20Office1.png)
-3) (a) Tile - Map - ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testfolder/map02_04.png)
-   (b) Output Image 1 - Map - ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testresults/map02_040.png)
-       Output Image 2 - Map - ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testresults/map02_041.png)
-4) (a) Tile - Zelda - ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testfolder/zelda.png)
-   (b) Output - Zelda - ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testresults/zelda0.png) 
-       Output - Zelda - ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testresults/zelda1.png) 
+1) (a) Tile - Lake - ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testfolder/Lake.png) . 
+   (b) Output image 1 - Lake ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testresults/Lake0.png) . 
+       Output Image 2 - Lake ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testresults/Lake1.png) . 
+2) (a) Tile - Magic Office - ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testfolder/Magic%20Office.png) . 
+   (b) Output Image 1 - Magic Office ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testresults/Magic%20Office0.png) . 
+       Output Image 2 - Magic Office ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testresults/Magic%20Office1.png) . 
+3) (a) Tile - Map - ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testfolder/map02_04.png) . 
+   (b) Output Image 1 - Map - ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testresults/map02_040.png) . 
+       Output Image 2 - Map - ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testresults/map02_041.png) . 
+4) (a) Tile - Zelda - ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testfolder/zelda.png) . 
+   (b) Output - Zelda - ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testresults/zelda0.png) .  
+       Output - Zelda - ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testresults/zelda1.png) .  
 
 
 ## fast-wfc
