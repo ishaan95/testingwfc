@@ -5,14 +5,14 @@ In this implementation we use the overlapping model.
 Screenshots - 
 
 1)     Tile - Lake - ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testfolder/Lake.png) . 
-       Output ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testresults/Lake0.png) . 
-       Output ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testresults/Lake1.png) . 
+       ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testresults/Lake0.png) . 
+       ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testresults/Lake1.png) . 
 2)     Tile - Magic Office - ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testfolder/Magic%20Office.png) . 
        ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testresults/Magic%20Office0.png) . 
        ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testresults/Magic%20Office1.png) . 
 3)     Tile - Map - ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testfolder/map02_04.png) . 
-       Output ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testresults/map02_040.png) . 
-       Output ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testresults/map02_041.png) . 
+       ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testresults/map02_040.png) . 
+       ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testresults/map02_041.png) . 
 4)     Tile - Zelda - ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testfolder/zelda.png) . 
        ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testresults/zelda0.png) .  
        ![alt-text](https://github.com/ishaan95/testingwfc/blob/master/testresults/zelda1.png) .  
