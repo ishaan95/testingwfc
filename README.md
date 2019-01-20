@@ -1,6 +1,6 @@
 ## Testing the wfc c++ port
 
-Testing the wfc c++ port by Mathieu Fehr and Nathanaël Courant. The fast-wfc repository is given [here](https://github.com/math-fehr/fast-wfc)
+Testing the wfc c++ port by Mathieu Fehr and Nathanaël Courant. The fast-wfc repository is given [here](https://github.com/math-fehr/fast-wfc) . 
 In this implementation we use the overlapping model.
 
 Screenshots - 
